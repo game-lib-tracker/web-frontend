@@ -1,0 +1,40 @@
+name: Technical Debt
+description: Report technical debt or refactoring needs
+title: "[TECH-DEBT] "
+labels: ["tech-debt"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the technical debt
+      placeholder: What technical debt have you identified?
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What is the impact of this technical debt?
+      placeholder: How does this affect development/maintenance?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How would you address this technical debt?
+      placeholder: What changes are needed?
+    validations:
+      required: true
+  - type: input
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent is this? (low, medium, high, critical)
+      placeholder: medium
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other context about the technical debt here
